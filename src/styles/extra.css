@@ -1,0 +1,113 @@
+/* ===== Page load (original adds .loaded to <html> after 1s, then AOS plays) ===== */
+.ldld.full { display: none; }
+
+/* ===== Modal overlay (Fancybox replacement) ===== */
+.fb-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(30, 30, 30, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+  overflow: auto;
+  animation: fbFade 0.25s ease;
+}
+@keyframes fbFade { from { opacity: 0; } to { opacity: 1; } }
+
+.fb-content {
+  position: relative;
+  margin: auto;
+  animation: fbZoom 0.25s ease;
+}
+@keyframes fbZoom { from { transform: scale(0.96); } to { transform: scale(1); } }
+
+/* Base close button (decorated by main.css per-popup rules) */
+.fancybox-close-small {
+  position: absolute;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+/* ===== Gallery lightbox (Fotorama replacement) ===== */
+.gallery-lb {
+  width: min(1086px, 100%);
+  margin: auto;
+  user-select: none;
+}
+.gallery-lb__stage {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+.gallery-lb__stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.gallery-lb__arr {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  border: 0;
+  cursor: pointer;
+  background: center / cover no-repeat;
+  z-index: 2;
+}
+.gallery-lb__arr--prev { left: 12px; }
+.gallery-lb__arr--next { right: 12px; }
+.gallery-lb__thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-lb__thumb {
+  width: 96px;
+  height: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  background: #000;
+}
+.gallery-lb__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-lb__thumb.is-active { opacity: 1; }
+
+/* Lock scroll when a modal is open */
+body.fb-lock { overflow: hidden; }
+
+/* ===== FAQ accordion (jQuery slideToggle replacement) ===== */
+.faq-item__body {
+  display: block;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, margin-top 0.35s ease;
+}
+.faq-item.--active .faq-item__body {
+  max-height: 1200px;
+  margin-top: 26px;
+}
+
+/* About-block popup text inside form popups keeps original look already.
+   Ensure long legal popups scroll nicely on small screens. */
+.text-popup .about-popup__content,
+#about-popup .about-popup__content {
+  max-height: 70vh;
+  overflow: auto;
+  padding-right: 6px;
+}

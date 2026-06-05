@@ -1,0 +1,20 @@
+/* Shantell Sans */
+@font-face { font-display: swap; font-family: 'Shantell Sans'; font-style: normal; font-weight: 300; src: url('/assets/fonts/shantell-sans-v12-cyrillic_latin_latin-ext_vietnamese-300.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Shantell Sans'; font-style: normal; font-weight: 400; src: url('/assets/fonts/shantell-sans-v12-cyrillic_latin_latin-ext_vietnamese-regular.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Shantell Sans'; font-style: normal; font-weight: 500; src: url('/assets/fonts/shantell-sans-v12-cyrillic_latin_latin-ext_vietnamese-500.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Shantell Sans'; font-style: normal; font-weight: 600; src: url('/assets/fonts/shantell-sans-v12-cyrillic_latin_latin-ext_vietnamese-600.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Shantell Sans'; font-style: normal; font-weight: 700; src: url('/assets/fonts/shantell-sans-v12-cyrillic_latin_latin-ext_vietnamese-700.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Shantell Sans'; font-style: normal; font-weight: 800; src: url('/assets/fonts/shantell-sans-v12-cyrillic_latin_latin-ext_vietnamese-800.woff2') format('woff2'); }
+
+/* PT Serif */
+@font-face { font-display: swap; font-family: 'PT Serif'; font-style: normal; font-weight: 400; src: url('/assets/fonts/pt-serif-v18-cyrillic_latin_latin-ext-regular.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'PT Serif'; font-style: normal; font-weight: 700; src: url('/assets/fonts/pt-serif-v18-cyrillic_latin_latin-ext-700.woff2') format('woff2'); }
+
+/* PT Serif Caption */
+@font-face { font-display: swap; font-family: 'PT Serif Caption'; font-style: normal; font-weight: 400; src: url('/assets/fonts/pt-serif-caption-v17-cyrillic_latin_latin-ext-regular.woff2') format('woff2'); }
+
+/* Caveat */
+@font-face { font-display: swap; font-family: 'Caveat'; font-style: normal; font-weight: 400; src: url('/assets/fonts/caveat-v22-cyrillic_latin_latin-ext-regular.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Caveat'; font-style: normal; font-weight: 500; src: url('/assets/fonts/caveat-v22-cyrillic_latin_latin-ext-500.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Caveat'; font-style: normal; font-weight: 600; src: url('/assets/fonts/caveat-v22-cyrillic_latin_latin-ext-600.woff2') format('woff2'); }
+@font-face { font-display: swap; font-family: 'Caveat'; font-style: normal; font-weight: 700; src: url('/assets/fonts/caveat-v22-cyrillic_latin_latin-ext-700.woff2') format('woff2'); }

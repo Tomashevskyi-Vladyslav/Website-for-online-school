@@ -1,0 +1,14 @@
+/* Fonts */
+@import "../styles/fonts.css";
+
+/* Animation + carousel libraries (vendored to avoid bare-module CSS resolution) */
+@import "../styles/vendor-aos.css";
+@import "../styles/vendor-swiper.css";
+@import "../styles/vendor-swiper-navigation.css";
+
+/* Ported original theme styles */
+@import "../styles/main.css";
+@import "../styles/media.css";
+
+/* React re-implementations of Fancybox / Fotorama behaviours */
+@import "../styles/extra.css";
